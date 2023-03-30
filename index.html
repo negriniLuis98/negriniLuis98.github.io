@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ebb653cb40.js" crossorigin="anonymous"></script>
+    <title>Curriculum Vitae</title>
+</head>
+<body>
+    <div class="Carta" onclick="mostrarDiv('Perfil')">
+        <h1><span class="fa-solid fa-user"></span> Sobre mí</h1>
+        <div id="Perfil" style="display: none">
+            <img id="FotoPerfil" />
+            <h3 id="Titulo"></h3>
+            <p id="Descripcion"></p>
+            <div class="Selectores">
+                <p id="Personal">Info. Personal</p>
+                <p id="Contacto">Contacto</p>
+                <p id="Nacionalidad">Ubicación</p>
+            </div>
+        </div>
+    </div>
+    <div class="Carta" onclick="mostrarDiv('Estudios')">
+        <h1><span class="fa-solid fa-book"></span> Estudios</h1>
+        <div id="Estudios" style="display: none">
+            <table cellspacing="0">
+                <thead>
+                    <th>Instituto</th>
+                    <th>Carrera Realizada</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td  id="Der">Universidad Tecnológica Nacional<br/>(2010 - 2015)</td>
+                        <td>Analista en Sistemas, Ingeniería en Sistemas de Información (especializado en Ciberseguridad)</td>
+                    </tr>
+                    <tr>
+                        <td id="Der">Universidad Nacional de Córdoba<br/>(2016 - 2020)</td>
+                        <td>Licenciatura en Ciencias de la Computación (especializado en Inteligencia Artificial)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="Carta" onclick="mostrarDiv('Experiencia')" >
+        <h1><span class="fa-solid fa-hammer"></span> Experiencia Laboral</h1>
+        <div id="Experiencia" style="display: none">
+            <table cellspacing="0">
+                <thead>
+                    <th>Empresa</th>
+                    <th>Cargo Ejercido</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td  id="Der">UniTech<br/>(2016-2018)</td>
+                        <td>Profesional de Seguridad</td>
+                    </tr>
+                    <tr>
+                        <td id="Der">IAnT<br/>(2018-2021)</td>
+                        <td>Desarrollador Web (Fullstack)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/over.js"></script>
+    <script src="js/click.js"></script>
+</body>
+</html>
